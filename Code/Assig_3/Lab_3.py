@@ -58,4 +58,9 @@ while playagain == 'Y' or playagain == 'y':
             print('Your number is',i)
             print('Pretty cool right?')
             break
-    playagain = input('Do you want to play again? Y to continue, N to quit:\n')
+    while 1 > 0:
+        playagain = input('Do you want to play again? Y to continue, N to quit:\n')
+        if playagain == 'y' or playagain == 'Y':
+            break
+        if playagain == 'n' or playagain == 'N':
+            break
