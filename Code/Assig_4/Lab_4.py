@@ -1,3 +1,25 @@
+########################################################################
+##
+## CS 101 Lab
+## Program #4
+## Charles Keys
+## CKBMD@umsystem.edu
+##
+## PROBLEM : Create a gambling program that tracks bank balance and rolls slots
+##
+## ALGORITHM : 
+##      1. define functions to do specific actions
+##      2. call functions to set balances
+##      3. call functions to spin, calculate gain/loss, and then loop
+##      4. when loop ends call play again
+## 
+## ERROR HANDLING:
+##      Do not enter strings for any integer calls
+##
+## OTHER COMMENTS:
+##      Any special comments
+##
+########################################################################
 import random
 def play_again():
     user_input = input('Do you want to play again?\n')
