@@ -77,17 +77,30 @@ def get_payout(wager, matches):
     else:
         payout = -1 * wager
     return payout
-repeat = True
-while repeat:
-    bank = get_bank()
-    while bank > 0:
-        wager = get_wager(bank)
-        reeltuple = get_slot_results()
-        print('Your spin {} {} {}'.format(reeltuple[0], reeltuple[1], reeltuple[2]))
-        matches = get_matches(reeltuple)
-        print('You matched {} reels'.format(matches))
-        payout = get_payout(wager, matches)
-        print('You won/lost',payout)
-        bank += payout
-        print('Current bank:',bank)
-    repeat = play_again()
+
+if __name__ == "__main__":
+
+    repeat = True
+    losses = 0
+    spins = 0
+    max_bank = 0
+    while repeat:
+        bank = get_bank()
+        while bank > 0:
+            if bank >= max_bank:
+                max_bank = bank
+            wager = get_wager(bank)
+            reeltuple = get_slot_results()
+            print('Your spin {} {} {}'.format(reeltuple[0], reeltuple[1], reeltuple[2]))
+            matches = get_matches(reeltuple)
+            print('You matched {} reels'.format(matches))
+            payout = get_payout(wager, matches)
+            print('You won/lost',payout)
+            if payout < 0:
+                losses += 1
+            spins += 1
+            bank += payout
+            print('Current bank:',bank)
+        print("\nYou lost {} in {} spins".format(losses, spins))
+        print("The most chips you had was {}".format(max_bank))
+        repeat = play_again()
