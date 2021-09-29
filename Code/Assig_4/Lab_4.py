@@ -44,9 +44,9 @@ def get_wager(bank):
             repeat = False
     return wager
 def get_slot_results():
-    reela = random.randint(1, 10)
-    reelb = random.randint(1, 10)
-    reelc = random.randint(1, 10)
+    reela = random.randint(1, 11)
+    reelb = random.randint(1, 11)
+    reelc = random.randint(1, 11)
     return reela, reelb, reelc
 def get_matches(reeltuple):
     reela = reeltuple[0]
