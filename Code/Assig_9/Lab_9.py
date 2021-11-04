@@ -1,3 +1,23 @@
+########################################################################
+##
+## CS 101 Lab
+## Program #9
+## Charles Keys
+## CKBMD@umsystem.edu
+##
+## PROBLEM : Create a program that organizes, updates, and displays grade info using lists
+##
+## ALGORITHM : 
+##      1. Make functions that preform the necessary dictionary creation and file reading
+##      2. Use and sort the data from said dictionaries to fill out print statements
+## 
+## ERROR HANDLING:
+##      N/A
+##
+## OTHER COMMENTS:
+##      Any special comments
+##              
+######################################################################## 
 import csv
 def month_from_number(month):
     months = ['January','February','March','April','May','June','July','August','September','October','November','December'] 
