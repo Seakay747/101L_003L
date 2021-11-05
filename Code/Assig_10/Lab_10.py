@@ -1,3 +1,23 @@
+########################################################################
+##
+## CS 101 Lab
+## Program #9
+## Charles Keys
+## CKBMD@umsystem.edu
+##
+## PROBLEM : Create a program that organizes, updates, and displays grade info using lists
+##
+## ALGORITHM : 
+##      1. Read in file as lists, make on list of lists, make string of lists, make list of char in string, use ascii vals to remove punc
+##      2. Create dict of words and their frequency, use enumerate to format printed menu
+## 
+## ERROR HANDLING:
+##      N/A
+##
+## OTHER COMMENTS:
+##      Any special comments
+##              
+######################################################################## 
 user_file = input('Enter of the name of the file to open:\n')
 loop = True
 while loop:
