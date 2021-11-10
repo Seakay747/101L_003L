@@ -28,7 +28,6 @@ while loop:
     except:
         print('The file {} could not be found, please enter a valid file name'.format(user_file))
         user_file = input('Enter of the name of the file to open:\n')
-file_text = ''
 temp_list = []
 for ele in file_lines:
     temp = ele.split()
